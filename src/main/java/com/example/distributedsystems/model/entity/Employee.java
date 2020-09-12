@@ -21,24 +21,25 @@ import lombok.Data;
 @Entity
 @Table(name = "employee")
 public class Employee {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id")
 	private Long id;
-	
+
 	@Column(name = "first_name")
 	private String firstName;
-	
+
 	@Column(name = "last_name")
 	private String lastName;
-	
-	@Column(name = "date_of_birth")
+
+	@Column(name = "date_of_birth", columnDefinition = "DATE")
 	private LocalDate dateOfBirth;
-	
+
 	@Column(name = "position")
 	private String position;
 
-	@Column(name = "first_day_in_company")
+	@Column(name = "first_day_in_company", columnDefinition = "DATE")
 	private LocalDate firstDayInCompany;
+
 }

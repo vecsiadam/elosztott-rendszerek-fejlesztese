@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
  * @author Adam Vecsi
  * @date 2020-09-12
  */
+
 @Data
 @NoArgsConstructor
 public class EmployeeDTO {
