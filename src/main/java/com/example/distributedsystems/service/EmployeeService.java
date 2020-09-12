@@ -5,7 +5,7 @@ import java.util.List;
 import com.example.distributedsystems.model.dto.EmployeeDTO;
 
 /**
- * TODO: Mit csinál?
+ * This service manages to save, update, delete and get employees.s
  *
  * @author Adam Vecsi
  * @date 2020-09-12

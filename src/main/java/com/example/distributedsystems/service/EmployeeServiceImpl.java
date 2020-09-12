@@ -14,7 +14,7 @@ import com.example.distributedsystems.util.EmployeeMapper;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * TODO: Mit csinál?
+ * This service manages to save, update, delete and get employees.s
  *
  * @author Adam Vecsi
  * @date 2020-09-12

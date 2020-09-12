@@ -12,7 +12,7 @@ import javax.persistence.Table;
 import lombok.Data;
 
 /**
- * TODO: Mit csinál?
+ * Entity class to store Employees.
  *
  * @author Adam Vecsi
  * @date 2020-09-12

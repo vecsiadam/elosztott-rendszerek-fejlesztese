@@ -5,7 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import com.example.distributedsystems.model.entity.Employee;
 
 /**
- * TODO: Mit csinál?
+ * Jpa repositroy class to save, update, get, delete, etc. employees.
  *
  * @author Adam Vecsi
  * @date 2020-09-12

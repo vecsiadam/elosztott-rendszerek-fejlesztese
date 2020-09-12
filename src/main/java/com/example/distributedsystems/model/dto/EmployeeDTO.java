@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * TODO: Mit csinál?
+ * DTO class for employees.
  *
  * @author Adam Vecsi
  * @date 2020-09-12

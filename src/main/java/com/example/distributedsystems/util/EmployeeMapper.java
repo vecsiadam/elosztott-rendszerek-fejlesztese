@@ -6,7 +6,7 @@ import com.example.distributedsystems.model.entity.Employee;
 import lombok.experimental.UtilityClass;
 
 /**
- * TODO: Mit csinál?
+ * Mapper class to map entity to dto, dto to entity.
  *
  * @author Adam Vecsi
  * @date 2020-09-12

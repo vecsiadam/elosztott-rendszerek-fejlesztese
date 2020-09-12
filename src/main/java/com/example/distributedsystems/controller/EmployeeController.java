@@ -16,7 +16,7 @@ import com.example.distributedsystems.model.dto.EmployeeDTO;
 import com.example.distributedsystems.service.EmployeeService;
 
 /**
- * TODO: Mit csinál?
+ * Employee calls.
  *
  * @author Adam Vecsi
  * @date 2020-09-12
