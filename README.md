@@ -1,1 +1,1 @@
-# elosztott-rendszerek-fejlesztese
+# Elosztott rendszerek fejlesztese
