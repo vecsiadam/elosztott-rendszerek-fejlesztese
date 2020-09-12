@@ -38,14 +38,14 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public void saveEmployee(EmployeeDTO employeeDTO) {
 		Employee employee = employeeRepository.save(EmployeeMapper.mapToEntity(employeeDTO));
-		log.info("Succesfully save employee with id: {}", employee.getId());
+		log.info("Succesfully save employee: {}", employee);
 
 	}
 
 	@Override
 	public void updateEmployee(EmployeeDTO employeeDTO) {
 		Employee employee = employeeRepository.save(EmployeeMapper.mapToEntity(employeeDTO));
-		log.info("Succesfully update employee with id: {}", employee.getId());
+		log.info("Succesfully update employee: {}", employee);
 	}
 
 	@Override
