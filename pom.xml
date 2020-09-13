@@ -12,6 +12,7 @@
 	<artifactId>distributed-systems</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Development of distributed systems</name>
+	<packaging>war</packaging>
 	<description>Development of distributed systems Spring boot example.</description>
 
 	<properties>
