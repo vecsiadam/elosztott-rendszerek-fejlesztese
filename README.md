@@ -11,3 +11,6 @@ docker build -t distributed-systems .
 ```sh
 docker run -p 3333:8080 distributed-systems
 ```
+
+3. Alkalmazás swagger elérése:
+http://localhost:3333/swagger-ui.html#/
