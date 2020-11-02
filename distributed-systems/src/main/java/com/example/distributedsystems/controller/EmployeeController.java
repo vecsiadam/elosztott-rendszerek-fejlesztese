@@ -3,6 +3,8 @@ package com.example.distributedsystems.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -29,22 +31,25 @@ public class EmployeeController {
 	private EmployeeService employeeService;
 
 	@GetMapping("/get-employees")
-	public List<EmployeeDTO> getEmployees() {
-		return employeeService.getEmployees();
+	public ResponseEntity<List<EmployeeDTO>> getEmployees() {
+		return new ResponseEntity<>(employeeService.getEmployees(), HttpStatus.OK);
 	}
 
 	@PostMapping("/save-employee")
-	public void saveEmployee(@RequestBody EmployeeDTO employee) {
+	public ResponseEntity<Void> saveEmployee(@RequestBody EmployeeDTO employee) {
 		employeeService.saveEmployee(employee);
+		return new ResponseEntity<>(HttpStatus.CREATED);
 	}
 
 	@PutMapping("/update-employee")
-	public void updateEmployee(@RequestBody EmployeeDTO employee) {
+	public ResponseEntity<Void> updateEmployee(@RequestBody EmployeeDTO employee) {
 		employeeService.updateEmployee(employee);
+		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 	}
 
 	@DeleteMapping("/delete-employee/{id}")
-	public void deleteEmployee(@PathVariable Long id) {
+	public ResponseEntity<Void> deleteEmployee(@PathVariable Long id) {
 		employeeService.deleteEmployee(id);
+		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 	}
 }
